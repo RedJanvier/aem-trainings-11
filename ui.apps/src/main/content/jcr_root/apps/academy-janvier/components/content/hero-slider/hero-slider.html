@@ -1,0 +1,21 @@
+<sly data-sly-use.model="it.codeland.academy.core.models.SliderModel" />
+<h2>My Slider Component </h2>
+
+<div id="carouselExampleControls" style="height: 500px;" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <sly data-sly-list.slide="${model.list}">
+            <div class="carousel-item bg-success text-light text-center${slideList.first? ' active': ''}" style="height: 400px;">
+                <h4 class="my-auto h-50">${slide}</h4>
+            </div>
+        </sly>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

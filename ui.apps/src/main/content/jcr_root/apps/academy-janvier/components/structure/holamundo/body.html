@@ -1,0 +1,13 @@
+<!--<sly data-sly-use.model="it.codeland.academy.core.models.Holamundo" />-->
+<h1>Hola mi querido mundo!</h1>
+<!--<h2>${model.title}</h2>-->
+<!--<p>${model.description}</p>-->
+
+<div data-sly-resource="${'hero-slider' @ resourceType='academy-janvier/components/content/hero-slider' }" ></div>
+
+<h2>List of Pages under <b>/us/en</b></h2>
+<ul id="my-pages"></ul>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories=['academy-janvier.base']}" />
+
+

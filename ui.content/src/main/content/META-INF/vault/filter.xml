@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/academy-janvier" mode="merge"/>
+    <filter root="/content/academy-janvier" mode="merge"/>
+    <filter root="/content/dam/academy-janvier/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/academy-janvier" mode="merge"/>
+</workspaceFilter>
